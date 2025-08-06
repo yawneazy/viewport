@@ -79,7 +79,7 @@ table {
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 body {
-    background-color: var(--light-gray);
+    background-color: var(--white);
     color: var(--dark-gray);
 }
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
@@ -207,9 +207,16 @@ img{
 
 
 /* ---------- SMALL SCREEN STYLES ---------- */
+@media screen and (max-width: 319px){
+    body {
+        background-color: var(--black);
+    }
+}
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
 @media screen and (min-width: 320px){
-
+    body {
+        background-color: var(--black);
+    }
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
@@ -244,6 +251,9 @@ img{
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
 @media screen and (min-width: 550px){
+    body {
+        background-color: var(--black);
+    }
     header, footer{
         background-color: var(--black);
         color: var(--white);
@@ -278,6 +288,9 @@ img{
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
 @media screen and (min-width: 768px){
+    body {
+        background-color: var(--black);
+    }
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
@@ -317,10 +330,7 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
-        width: 300px;
-        max-width: 300px;
-    } */
+  
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
@@ -328,6 +338,10 @@ img{
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
 @media screen and (min-width: 960px){
+    body {
+        background-color: var(--white);
+    }
+    
     header, footer{
         background-color: var(--orange);
         padding-left: 5%;
@@ -338,9 +352,14 @@ img{
         margin: 1em auto;
     }
 
+      img{
+        width: 300px;
+        max-width: 300px;
+    }
+
     section{
         background-color: var(--blue-gray);
-        color: var(--dark-gray);
+        color: var(--white);
     }
 
     #one, #two{
